@@ -1,4 +1,6 @@
-public static void Main(String[] args) {
+public class Main {
+
+public static void main(String[] args) {
      operacion op = new operacion();
         
         // Test the Sumar method with two integers
@@ -19,7 +21,29 @@ public static void Main(String[] args) {
 
         operacion op2 = new operacion();
         // Test the Sumar method with two integers
-        int result5 = op2.Sumar(5, 10);
-        System.out.println("Resultado de la suma de enteros: " + result5);                      
+      
+        
+         op.imprimirNumeroImpares(5);
 
+         Opcion opcion = Opcion.SUMA;
+         if(opcion==Opcion.SUMA) {
+            System.out.println("La opción seleccionada es Suma");
+         }
+
+         switch(opcion) {
+            case SUMA:
+                System.out.println("La opción seleccionada es Suma");
+                break;
+            case RESTA:
+                System.out.println("La opción seleccionada es Resta");
+                break;
+            case MULTIPLICACION:
+                System.out.println("La opción seleccionada es Multiplicación");
+                break;
+            case DIVISION:
+                System.out.println("La opción seleccionada es División");
+                break;
+         }
+ 
+        } 
 }
